@@ -30,10 +30,10 @@ public class EmployeeCOntroller {
 
     }
 
-     @GetMapping("/fetch/{id}")
-    public ResponseEntity<ResponseStruture<Employee>> fetchEmployee(@PathVariable int id){
-        return service.fetchEmployee(id);
-    }
+    //  @GetMapping("/fetch/{id}")
+    // public ResponseEntity<ResponseStruture<Employee>> fetchEmployee(@PathVariable int id){
+    //     return service.fetchEmployee(id);
+    // }
 
     @GetMapping("/fetchAll")
     public ResponseEntity<ResponseStruture<List<Employee>>> fetchAll(){
